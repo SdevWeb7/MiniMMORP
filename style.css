@@ -1,1 +1,23 @@
-s
+body {
+    margin: 0;
+}
+#container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+#console {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    height: calc(100vh - 200px);
+}
+#static-canvas, #char-canvas {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 300px;
+}
