@@ -4,7 +4,7 @@ export default class TileManager {
 
    static async tilesCut (file, nombreElementX, nombreElementY, tilesNames) {
 
-      let result = await fetch(`../images/${file}.png`);
+      let result = await fetch(`./images/${file}.png`);
       TileManager.listFile[file] = {full: await createImageBitmap(await result.blob()), listItems: {}};
       let tailleImgX = TileManager.listFile[file].full.width / nombreElementX;
       let tailleImgY = TileManager.listFile[file].full.height / nombreElementY;
