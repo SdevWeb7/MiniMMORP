@@ -18,7 +18,7 @@ export default class Map {
       await TileManager.tilesCut('decor3', 5, 1, tilesNamesMap);
       await TileManager.tilesCut('personnage', 3, 4, tilesNamesChar);
 
-      let datas = await fetch(`/datas/${file}.json`);
+      let datas = await fetch(`./datas/${file}.json`);
       let map = await datas.json();
       Object.assign(this, map);
 
